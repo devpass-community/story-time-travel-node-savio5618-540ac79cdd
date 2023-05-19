@@ -1,9 +1,7 @@
 const getCurrentDate = () => {
-  const date = new Date();
-  const formatedDate = `${date.getDate().toString()}/${date
-    .getMonth()
-    .toString()}/${date.getFullYear().toString()}`;
-  return formatedDate;
+  const date = new Date().toLocaleDateString("pt-BR");
+
+  return date;
 };
 
 module.exports = {
